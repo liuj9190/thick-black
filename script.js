@@ -4,7 +4,7 @@
         options: [
             { text: "A. 直接指出，要求改正。 ", next: 1, score: 1 },
             { text: "B. 私下提醒，建議掩蓋錯誤。", next: 1, score: 3 },
-            { text: "C. 假裝不知，等錯誤擴大後再解決，\n凸顯自己能力。", next: 1, score: 5 }
+            { text: "C. 假裝不知，等錯誤擴大後再解決，凸顯自己能力。", next: 1, score: 5 }
         ],
         background: 'images/default-background.jpg'
     },
@@ -22,7 +22,7 @@
         options: [
             { text: "直接拒絕，說明不合理。", next: 3, score: 1 },
             { text: "表面接受，私下拖延。", next: 3, score: 3 },
-            { text: "積極接受，將責任推給同事，\n自己表現「盡心盡力」。", next: 3, score: 5 }
+            { text: "積極接受，將責任推給同事，自己表現「盡心盡力」。", next: 3, score: 5 }
         ],
         background: 'images/background2.jpg'
     },
