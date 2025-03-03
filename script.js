@@ -1,50 +1,49 @@
-﻿const questions = [
+const questions = [
     {
-        question: "<span class='red-highlight'>你的厚黑指數有多高？</span><br><br>發現同事錯誤影響團隊，你會？",
-        options: [
-            { text: "A. 直接指出，要求改正。 ", next: 1, score: 1 },
-            { text: "B. 私下提醒，建議掩蓋錯誤。", next: 1, score: 3 },
-            { text: "C. 假裝不知，等錯誤擴大後再解決，凸顯自己能力。", next: 1, score: 5 }
+        question: "<span class='red-highlight'>你的厚黑指數有多高？</span><br><br>你競爭升職時發現上司更偏向別人，你會？",
+        options: [           
+            { text: "A.私下拉攏上司，增加勝算。", next: 1, score: 3 },
+            { text: "B.暗中讓競爭者犯錯。", next: 1, score: 5 },
+            { text: "C.直接展現能力，爭取機會。 ", next: 1, score: 1 }
         ],
         background: 'images/default-background.jpg'
     },
     {
-        question: "與對手爭客戶，你會？",
+        question: "朋友利用你的人脈，卻沒回報，你會？",
         options: [
-            { text: "公平競爭，靠實力。", next:2, score: 1 },
-            { text: "暗示對手弱點，影響客戶選擇。", next: 2, score: 3 },
-            { text: "製造假消息打擊對手，提供「獨家優惠」搶客戶。", next: 2, score: 5 }
+            { text: "反向利用對方。", next: 2, score: 5 },
+            { text: "直接攤牌表達不滿。", next:2, score: 1 },
+            { text: "保持距離，等待機會。", next: 2, score: 3 }        
         ],
         background: 'images/background1.jpg'
     },
     {
-        question: "上司給不合理任務，你會？",
+        question: "發現合作夥伴可能背叛你，你會？",
         options: [
-            { text: "直接拒絕，說明不合理。", next: 3, score: 1 },
-            { text: "表面接受，私下拖延。", next: 3, score: 3 },
-            { text: "積極接受，將責任推給同事，自己表現「盡心盡力」。", next: 3, score: 5 }
+            { text: "保持信任，誠信為本。", next: 3, score: 1 },          
+            { text: "先下手為強，削弱對方。", next: 3, score: 5 },
+            { text: "設防機制，確保自身利益。", next: 3, score: 3 }
         ],
         background: 'images/background2.jpg'
     },
    {
-        question: "朋友背叛你，你會？",
+        question: "客戶提出超出合約範圍的要求，並威脅取消合作，你會？",
         options: [
-            { text: "直接對質，斷絕關係。", next: 4, score: 1 },
-            { text: "假裝不知，暗中疏遠並找機會報復。", next: 4, score: 3 },
-            { text: "保持親密，利用信任設局反擊。", next: 4, score: 5 }
+            { text: "直接拒絕，堅持合約內容。", next: 4, score: 1 },
+            { text: "完全滿足客戶，避免失去合作機會。", next: 4, score: 3 },
+            { text: "表面答應，但設法讓客戶知難而退。", next: 4, score: 5 }
         ],
         background: 'images/background3.jpg'
     },
    {
-        question: "需要升職，你會如何對待對手？",
+        question: "面對不可違抗的權勢壓迫，你會？",
         options: [
-            { text: " 靠實力競爭，尊重對手。", next: -1, score: 1 },
-            { text: "蒐集對手負面信息，關鍵時刻透露。", next: -1, score: 3 },
-            { text: "假意合作，設局讓對手犯錯，自己展現能力。", next: -1, score: 5 }
+            { text: "投其所好，博取信任，最後反客為主。", next: -1, score: 5 },
+            { text: "假裝順從，暗中尋找後路。", next: -1, score: 3 },
+            { text: "完全順從，避免與領導衝突。", next: -1, score: 1 }
         ],
         background: 'images/background4.jpg'
-    },
-   
+    },   
 ];
 
 // 當前問題索引
@@ -173,4 +172,5 @@ function restart() {
 }
 
 // 頁面載入時自動加載第一個問題
+loadQuestion();
 loadQuestion();
